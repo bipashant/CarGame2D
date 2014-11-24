@@ -1,0 +1,146 @@
+﻿body
+{
+    background-color: seagreen;
+    position: relative;
+    background-color: darkcyan;
+    background-repeat: repeat;
+}
+#mainroad
+{
+    width: 350px;
+    height: 16000px;
+    background-image: url(sprites/bg.png);
+    background-repeat: repeat-y;
+    position: absolute;
+}
+#maincontainer
+{
+    width: 350px;
+    max-height: 600px;
+    height: 600px;
+    margin-top: 50px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.opponent
+{
+    position: absolute;
+    width: 50px;
+    height: 54px;
+    background-image: url(sprites/opponent.png);
+}
+
+.owncar
+{
+    position: absolute;
+    width: 50px;
+    height: 54px;
+    background-image: url('sprites/owncar.png');
+    top: 520px;
+    left: 150px;
+    z-index: 2;
+}
+.bullet {
+    position: absolute;
+    width: 21px;
+    height: 100px;
+    background-image: url(sprites/bullet.png);
+    z-index: 1;
+}
+#score {
+    position: absolute;
+    top:0px;
+    left: 139px;
+    z-index: 100;
+    background-color: yellowgreen;
+    font-size: 30px;
+    
+}
+#menuscreen {
+    background-color: brown;
+    height: 400px;
+    width: 700px;
+    background-image: url(sprites/logo.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    left: 30%;
+    top: 150px;
+    position: absolute;
+    z-index: 4;
+    
+    border-radius: 100px;
+    border: 5px #f2420e double;
+}
+.playbtn {
+    background-image: url('sprites/play.png');
+    border-radius: 30px;
+    height: 93px;
+    width: 150px;
+    background-repeat: no-repeat;
+    margin-top: 150px;
+    margin-left: 200px;
+     
+}
+.playbtn:hover {
+    background-color: #A2420E;
+}
+.highscorediv {
+    font: 30px sans-serif;
+    color: darkgoldenrod;
+    
+      margin-top: 30px;
+    margin-left: 200px;
+    
+}
+.ScoreDiv {
+    font: 30px sans-serif;
+    color: darkgoldenrod;
+    margin-top: 10px;
+    margin-left: 200px;
+    
+}
+
+
+
+.blink_me 
+{
+     font: 30px sans-serif;
+    color: darkgoldenrod;
+    
+      margin-top: 150px;
+    margin-left: 250px;
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@-moz-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
